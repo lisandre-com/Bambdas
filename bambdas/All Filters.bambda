@@ -1,0 +1,21 @@
+// Lisandre.com
+// All filters, uncomment filters as needed
+
+var filterScope = true; var filterURL = true; var filterTime = true;
+var filterStatus = true; var filterExtension = true; var filterNotes = true;
+var filterSearchTerm = true; var filterEdited = true; var filterNoResponse = true;
+var caseSensitive = false;
+
+//filterSearchTerm = requestResponse.contains("admin", caseSensitive); // In request or response
+//filterSearchTerm = requestResponse.hasResponse() && requestResponse.response().contains("admin", caseSensitive); // In response only
+//filterScope = requestResponse.request().isInScope();
+//filterURL = requestResponse.request().path().contains("admin");
+//filterURL = !requestResponse.request().path().contains("path to exclude");
+//filterTime = requestResponse.time().isAfter(ZonedDateTime.now().minusHours(1));
+//filterStatus = requestResponse.hasResponse() && requestResponse.response().statusCode() == 200;
+//filterExtension = !requestResponse.request().pathWithoutQuery().toLowerCase().matches(".*\\.(gif|jpg|png|css|otf|ttf|woff)$");
+//filterNotes = requestResponse.annotations().hasNotes();
+//filterEdited = requestResponse.edited();
+//filterNoResponse = !requestResponse.hasResponse();
+
+return filterScope && filterURL && filterTime && filterStatus && filterExtension && filterNotes && filterSearchTerm && filterEdited && filterNoResponse;
