@@ -1,5 +1,6 @@
 // Lisandre.com
 // All filters on WebSockets, uncomment filters as needed
+// Function: View filter, Location: WebSockets history
 
 var filterTime = true;
 var filterNotes = true;
