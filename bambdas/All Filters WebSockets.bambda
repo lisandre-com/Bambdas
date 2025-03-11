@@ -1,19 +1,23 @@
-// Lisandre.com
-// All filters on WebSockets, uncomment filters as needed
-// Function: View filter, Location: WebSockets history
-
-var filterTime = true;
-var filterNotes = true;
-var filterSearchTerm = true;
-var filterDirection = true;
-var caseSensitive = false;
-
-//filterSearchTerm = message.contains("hello", caseSensitive); // In any message
-//filterSearchTerm = message.contains("hello", caseSensitive) && message.direction() == Direction.SERVER_TO_CLIENT; // In server response only
-//filterSearchTerm = !message.contains("hello", caseSensitive);
-//filterDirection = message.direction() == Direction.CLIENT_TO_SERVER; // To server
-//filterDirection = message.direction() == Direction.SERVER_TO_CLIENT; // To client
-//filterNotes = message.annotations().hasNotes();
-//filterTime = message.time().isAfter(ZonedDateTime.now().minusHours(3));
-
-return filterSearchTerm && filterDirection && filterNotes && filterTime;
+name: All Filters WebSockets
+function: VIEW_FILTER
+location: PROXY_WEBSOCKET
+source: |+
+  // Lisandre.com
+  // All filters on WebSockets, uncomment filters as needed
+  // Function: View filter, Location: WebSockets history
+  
+  var filterTime = true;
+  var filterNotes = true;
+  var filterSearchTerm = true;
+  var filterDirection = true;
+  var caseSensitive = false;
+  
+  //filterSearchTerm = message.contains("hello", caseSensitive); // In any message
+  //filterSearchTerm = message.contains("hello", caseSensitive) && message.direction() == Direction.SERVER_TO_CLIENT; // In server response only
+  //filterSearchTerm = !message.contains("hello", caseSensitive);
+  //filterDirection = message.direction() == Direction.CLIENT_TO_SERVER; // To server
+  //filterDirection = message.direction() == Direction.SERVER_TO_CLIENT; // To client
+  //filterNotes = message.annotations().hasNotes();
+  //filterTime = message.time().isAfter(ZonedDateTime.now().minusHours(3));
+  
+  return filterSearchTerm && filterDirection && filterNotes && filterTime;
