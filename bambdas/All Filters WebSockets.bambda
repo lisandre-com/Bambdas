@@ -20,6 +20,6 @@ source: |+
   //filterDirection = message.direction() == Direction.CLIENT_TO_SERVER; // To server
   //filterDirection = message.direction() == Direction.SERVER_TO_CLIENT; // To client
   //filterNotes = message.annotations().hasNotes();
-  //filterTime = message.time().isAfter(ZonedDateTime.now().minusHours(3));
+  //filterTime = message.time().isAfter(ZonedDateTime.now().minusHours(1));
   
   return filterScope && filterSearchTerm && filterDirection && filterNotes && filterTime;
