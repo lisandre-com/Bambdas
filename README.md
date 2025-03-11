@@ -5,7 +5,7 @@ Bambdas to use within Burp Suite
 
 * Click on the _Extensions->Bambda library_ tab.
 * Click on _New_ to create a new Bambda, or click on _Import_ to import a file.
-* Select the appropriate _Function_ (View filter) and _Location_ (HTTP history, WebSockets history, etc.) for each bambda.
+* Ensure the appropriate _Function_ and _Location_ are set for the new bambda.
 
 ## Apply Bambdas
 
